@@ -6,8 +6,8 @@ body {
         }
         .Logo {
             text-align: center;
-            padding: 15px 0 ;
-            margin-bottom: 0 ;
+            padding: 15px 0;
+            margin-bottom: 0;
             background: #f8f8f8;
         }
         .Logo img {
@@ -20,12 +20,12 @@ body {
             filter: grayscale(0%);
         }
         .navbar {
-            background: #000000 ;
+            background: #000000;
             padding: 20px 0;
-            margin-bottom: 0 ;
+            margin-bottom: 30px;
         }
         .nav-link {
-            color: #ffffff ;
+            color: #ffffff;
             font-weight: 500;
             letter-spacing: 1px;
             text-transform: uppercase;
@@ -34,28 +34,39 @@ body {
             transition: all 0.3s ease;
         }
         .nav-link:hover {
-            color: #d4af37 ;
+            color: #d4af37;
         }
-.carrusel-container {
+        .carrusel-container {
             width: 100%;
-            max-width: 800px;
-            margin: 10px auto;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border-radius: 5px;
+            max-width: 100%;
+            margin: 30px auto;
+            box-shadow: none;
+            border-radius: 0;
             overflow: hidden;
+            position: relative;
+            height: 80vh;
         }
         .carrusel {
             display: flex;
-            width: 300%;
+            width: 200%;
             animation: slide 15s infinite;
+            height: 100%;
+            gap: 0;
+            margin: 0;
+            padding: 0;
+            justify-content: flex-start;
         }
         .carrusel img {
-            width: 100%;
-            flex: 1 0 100%;
-            height: 400px;
+            width: 50%;
+            flex: 0 0 50%;
+            height: 100%;
             object-fit: cover;
+            background-color: #f8f8f8;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            display: block;
         }
-
         @keyframes slide {
             0% { transform: translateX(0); }
             33% { transform: translateX(-100%); }
@@ -64,7 +75,7 @@ body {
         }
         h1 {
             color: #000000;
-            margin: 15px 0 ;
+            margin: 15px 0;
             font-weight: 300;
             letter-spacing: 2px;
         }
@@ -82,56 +93,62 @@ body {
             color: #000000;
         }
         footer {
-            background: #000000 ;
+            background: #000000;
             color: #ffffff;
-            padding: 10px 0 ;
-            margin-top: 0 ;
+            padding: 10px 0;
+            margin-top: 0;
         }
         footer h2, .log, .border-bottom {
-            color: #e75480 ;
+            color: #e75480;
             font-size: 1.5rem;
             margin-bottom: 20px;
             font-weight: 300;
             letter-spacing: 1px;
         }
         footer .border-bottom {
-            border-color: #e75480 ;
+            border-color: #e75480;
         }
         footer .text-light {
-            color: #ffffff ;
+            color: #ffffff;
         }
         footer a {
-            color: #ffffff ;
+            color: #ffffff;
             text-decoration: none;
             transition: all 0.3s ease;
         }
         footer a:hover {
-            color: #d4af37 ;
+            color: #d4af37;
         }
         .footer-bottom {
             background: #000000;
-            padding: 7px 0 ;
-            margin-top: 10px ;
+            padding: 7px 0;
+            margin-top: 10px;
         }
         .container.mt-5 {
-            margin-top: 1rem ;
-            margin-bottom: 0 ;
-            padding-bottom: 0 ;
+            margin-top: 1rem;
+            margin-bottom: 0;
+            padding-bottom: 0;
         }
         .row {
-            margin-bottom: 0 ;
+            margin-bottom: 0;
         }
         .mb-4 {
-            margin-bottom: 0.5rem ;
-        }
-        .mb-5 {
             margin-bottom: 0.5rem;
         }
+        .mb-5 {
+            margin-bottom: 0;
+        }
         .card {
-            margin-bottom: 0.5rem ;
+            margin-bottom: 0.5rem;
+            height: 100%;
         }
         .card-img-top {
-            height: 600px ;
-            object-fit: cover ;
-            width: 100% ;
+            height: 250px;
+            object-fit: contain;
+            width: 100%;
+            background-color: #f8f8f8;
+            padding: 10px;
+        }
+        .card-body {
+            padding: 1rem;
         }
